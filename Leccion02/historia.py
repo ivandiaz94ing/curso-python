@@ -98,7 +98,47 @@ if (20 <= edad < 30) or (30 <= edad < 40):
 else:
     print("Su edad está fuera del rango especificado x2")
 
+##Imprimir el numero mayor
+
+num1 = int(input("Proporciona el numero1: "))
+num2 = int(input("Proporciona el numero2: "))
+
+if num1 > num2:
+    print(f'El número mayor es: {num1}')
+else:
+    if num2 > num1:
+        print(f'El número mayor es: {num2}')
+    else:
+        print(f'Los numeros son iguales')
 
 
+
+#EJERCICIO TIENDA DE LIBRO
+print("Proporcione los siguientes datos del libro")
+
+nombre = input("Proporcione el nombre del libro: ")
+id = int(input("Proporcione el ID: "))
+precio = float(input("Proporcione el precio: "))
+
+envio = (input("Indica si el envio es gratuito (True/False)?: "))
+
+print("********Datos del libro********")
+print('Nombre: '+nombre)
+print('ID:', id)
+print('Precio:', precio)
+if envio == "false" or envio == "False":
+    confirm = False
+else:
+    confirm = True
+
+print('Envio Gratis:', confirm)
+
+#Otra forma de imprimir
+print(f'''
+Nombre2:       {nombre}
+Id2:           {id}
+Precio2:       {precio}
+Envio Gratis2: {confirm}
+''')
 """
 
